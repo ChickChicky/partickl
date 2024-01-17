@@ -45,7 +45,7 @@ class Particle:
             self.pos = self.tgt.copy()
 
 running = True
-particles:list[Particle] = [Particle(Vector2(uniform(-WIDTH/2,+WIDTH/2),uniform(-HEIGHT/2,+HEIGHT/2)),clr=Vector3(uniform(0,255),uniform(0,255),uniform(0,255))) for _ in range(250000//5)]
+particles:list[Particle] = [Particle(Vector2(uniform(-WIDTH/2,+WIDTH/2),uniform(-HEIGHT/2,+HEIGHT/2)),clr=Vector3(uniform(0,255),uniform(0,255),uniform(0,255))) for _ in range(250000//10)]
 
 def refresh_targets(poses:list[Vector2],unref:bool=True):
     if unref: poses = [*poses]
